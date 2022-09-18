@@ -1,0 +1,209 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" sap2010:ExpressionActivityEditor.ExpressionActivityEditor="C#" sap:VirtualizedContainerService.HintSize="466,4596" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mca="clr-namespace:Microsoft.CSharp.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Text</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.CSharp</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Secuencia" sap:VirtualizedContainerService.HintSize="476,4335" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:StartProcess Arguments="{x:Null}" WorkingDirectory="{x:Null}" DisplayName="Iniciar proceso" FileName="C:\\Program Files\\LibreOffice\\program\\swriter.exe" sap:VirtualizedContainerService.HintSize="434,87" sap2010:WorkflowViewState.IdRef="StartProcess_1" />
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Utilizar Aplicación: Sin título 1 - LibreOffice Writer" sap:VirtualizedContainerService.HintSize="434,991" sap2010:WorkflowViewState.IdRef="NApplicationCard_5" ScopeGuid="218c1881-6e7c-4228-921e-06e8f2ff47f9" Version="V1">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Hacer" sap:VirtualizedContainerService.HintSize="376,702" sap2010:WorkflowViewState.IdRef="Sequence_6">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Escribir en 'client'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,216" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="218c1881-6e7c-4228-921e-06e8f2ff47f9" Text="Esta aplicacion Funciona" Version="V1">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="262, 252, 793, 18" FriendlyName="'client'" FullSelectorArgument="&lt;ctrl name='Sin título 1 - Documento de LibreOffice' role='document' /&gt;&lt;ctrl role='client' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Sin título 1 - Documento de LibreOffice' role='document' /&gt;&lt;ctrl role='client' automationid='' /&gt;" Guid="48a08516-7945-4cf3-ac00-b7e337da70a3" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAx0AAAAWCAYAAACltvHNAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEaSURBVHhe7dcxioRAEEBRQ+8PnkoDDUVMPICJhmLvDms4u7VDYeR7UNCVVNy/apqm8H/rupZhGK4NAIAn6bqubNt2bURerdF1bXl0dBzHUZZl+WjGcSx9318XAAB4krZtyzRNb/+Jf81TiY5vr+iY5/njqev6ugAAwJPs+/72fxjNeZ7XhWcRHQlVVV0vAADgN6IjQXQAAEBMdCSIDgAAiImOBNEBAAAx0ZEgOgAAICY6EkQHAADEREeC6AAAgJjoSBAdAAAQEx0JogMAAGKiI0F0AABATHQkiA4AAIiJjgTRAQAAMdGRIDoAACAmOhJEBwAAxERHgugAAICY6EgQHQAAEBMdAADArUQHAABwK9EBAADc6ic62vIFLGBpJVQwnIQAAAAASUVORK5CYII=" InformativeScreenshot="a53b2836ecf2f6d19175d40373b8f851.png" ScopeSelectorArgument="&lt;wnd app='soffice.bin' cls='SALFRAME' title='Sin título 1 - LibreOffice Writer' /&gt;" SearchSteps="Selector, FuzzySelector, Image" />
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NClick ClickType="Single" DisplayName="Clic 'Cerrar'" sap:VirtualizedContainerService.HintSize="334,156" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="218c1881-6e7c-4228-921e-06e8f2ff47f9" Version="V1">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="1326, 16, 56, 14" ElementType="Button" FriendlyName="'Cerrar'" FullSelectorArgument="&lt;ctrl name='Cerrar' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Cerrar' role='push button' automationid='' check:text='Cerrar' /&gt;" Guid="a19021dc-13ed-40f0-af9d-bbddb542f2b3" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADoAAAASCAYAAAAKRM1zAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACfSURBVFhH5dJBCoAwEATBXET//678SVlpQcSJB3eQxbpEyKA02NZkvfd1mpf9vBrdvdWesEt1F+SMDORo7NKdw9yRgRyNncUR6I4M5GjsLH4RekTGeX52IUdjl+ouzB1LjsYuzSjIGUuOxi5NvHIUEneGz37z636BHI1deeRo7MojR2NXHjkau/LI0diVR47GrjxyNHblkaOxK48cobUNiYG8PIcXBn8AAAAASUVORK5CYII=" InformativeScreenshot="a0a0f8d8448ac25b3af6e3205401d2c9.png" ScopeSelectorArgument="&lt;wnd app='soffice.bin' cls='SALFRAME' title='Sin título 1 - LibreOffice Writer' /&gt;" SearchSteps="Selector, FuzzySelector, Image" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ClickType="Single" DisplayName="Clic 'No guardar'" sap:VirtualizedContainerService.HintSize="334,156" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="218c1881-6e7c-4228-921e-06e8f2ff47f9" Version="V1">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="236, 119, 85, 30" ElementType="Button" FriendlyName="'No guardar'" FullSelectorArgument="&lt;ctrl name='No guardar' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='No guardar' role='push button' automationid='' check:text='No guardar' /&gt;" Guid="2eb5d0ce-ac8d-40e3-a228-1671ee2a22fb" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFkAAAAiCAYAAAA07nWtAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHYSURBVGhD7ZTbrcIwDEC7AAPAfxmABRiAAVijC3QNtoA5GIAF2KAb5OpUcmVy+4raWAX546iNmzjOaZKiaZrg5MUlG+CSDfiQfL/fnZXQXv9Jfr/fzkJcsgEu2QCXbIBLNsAlG+CSDXDJBrhkA1aT/Hq9wul0CpfL5SP+fD7bGN91fEtQ2/l8Do/Ho/f7UlaVTKH7/T7cbrcu7pIzSK7run2KVJecQTKFIrWqqjYeS+b7brcLRVG06F2vIS59yCu5Qf9E3QauLBnHvPShBuLX67WdmzFD+VNySK1TZJFMQcfjsXsXybS5TqRA3U/nivshRBYGQ5J1jriew+HQ/XhiQ/nn5kghi2TaFI5cLZlYXCTtOCZjpa1zg5YatxkruxBoUwO7kKf00XP21T6VI4VskmlTFHd0quQ4pnOPSSY/c8o35u0TNJZ/bo4UskkG3suy7CTQnntdEJcFsUg5zvEYZIkU3uUE0I/j3SdoLP/cHClklQwUrHcGBcdHUfcXWKz0Ia/O3feN/CKFOE/mHRI0lD8lx1xWk5yTJQvcAqtJll0xRt+4Oegj/I1scifrIwvsYrluvpFNSv41XLIBLtkAl2yASzZgUrKzDtrrh2QnDy7ZAJecnSb8Abt/Ruu/plTeAAAAAElFTkSuQmCC" InformativeScreenshot="9a6a2190b1b7f0a80614786d991e9f2b.png" ScopeSelectorArgument="&lt;wnd app='soffice.bin' cls='SALSUBFRAME' title='¿Quiere guardar el documento?' /&gt;" SearchSteps="Selector, FuzzySelector, Image" />
+              </uix:NClick.Target>
+            </uix:NClick>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, -8, 1382, 744" FilePath="C:\\Program Files\\LibreOffice\\program\\soffice.bin" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAPXSURBVFhHrZZJT1NRFMdZmDJUaGlry7R058LZtTFu/Q5+AKM4IKACZRKQ0YoMGl2aiBMKDiCIIi1gkVpqK6CIBBYGForGiEZzPOe+ewqtlvfA909uUpL33u9/xktctDJaZg5ktX6Yz2qdhsyW95DZjKdpCjKa3kHGxbeQ3jgJ6Rcm8IxDmuvNdzxttqrxZPl6nKNuzGuv84O99hVsqsFT7QNb9SjYzr0EW5W3Rz4WWwify2ph+BTCFXAE3CXgkHY+BI6GIJ7XbjZhr/WPKnAfwiVYwEfAWukFAVlNAo5Ra9Hcl5+w5+okOOoDYK8b81hcQyn2hoDDXuMLLsNHKHKEvwBrxQt1AyLlGLlWkYndV8Yx5X6M2h82gfCgiDoMHwbL2SENBmS91yIysetySNQbI1dMlA85rJUjwZVwS/mguoGMi0rN16rZxR+w81JQpH1TlddjcUoTFcNBhqeWe7QYwEZrnJCfXZuEidYx0WxY77AJhIdSyzyQWuZWN0BwGrH1ikzsaH6lpLxi0E0mrGWeTIQHzGUD3RITW3K+5efWJ2GiaVSkPLXULTIhP68unu//1eziEmxvfIkGBsBU0q/dBC8XPTT7eQm2XfCCuaQfTMXPtJkQm63+tfzE/4tMbHUNg8n5FExFfTckJraUrRaQr+ujmU/fIaWoD1IKnyxJTGzhSkUDfvkqRO50uc9Z4fmmESt1gxnrbS55TunmiOWTQHBIKehVH0NaqXSZsKLhtM9ZFuxy0sK3n/Dx6w/xe6UIyiJ48pkedQPiCsWotYgWC+ngzTew/4oPln79Fn+zCMoiePKZx1oMKCnXIkp5e2gBzMXY5c5nkN0xAe3Bedjb6hV1JyAr+XQ3bDzdpcGATDmLLhPLisuE6s2i8dpc4wnXW9S5EFNd0ANbagYQ2C2fBNh4qgvPI3UDXG+WAJ9VLhJKOS0WFjeb7HClzginyAlOUBbBjfkPNRgQ9/dyp+slghvzHqgb4PtbbxE8Kfe+BgOy3ixKOc22XKeR9f5Hyo35mOo8JVoCsuh30slOdQPcbCwBpy7/V73laC3DFbCRYLmdCOyQX0ED+Dsxp0ODgahO10uJOfcg8cRddQP8n4veInjC8XYNBuROZ602YpH1jkx5tAiecPyOugFuONbf9VYWCtdbNJeEU5pjKeHYHYg/dluLAaXh9Fb80dt4bqkb4G7XWwSPz76pwYAcNb1lyL4BhiNt6gYQPh2r6VbW3phHtVeWC803j5loNqx3AtabozYcUeCGw9enJSa2TM7efQj/sBo8uvEST0TCud7R8A2Hru2TGKm4uD8YBWBrcGr8NAAAAABJRU5ErkJggg==" InformativeScreenshot="ff9328612716e73af8ab24ca9263023e.png" Selector="&lt;wnd app='soffice.bin' cls='SALFRAME' title='Sin título 1 - LibreOffice Writer'/&gt;" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+    <ui:StartProcess Arguments="{x:Null}" WorkingDirectory="{x:Null}" DisplayName="Iniciar proceso" FileName="C:\\Program Files\\LibreOffice\\program\\simpress.exe" sap:VirtualizedContainerService.HintSize="434,87" sap2010:WorkflowViewState.IdRef="StartProcess_3" />
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Utilizar Aplicación: Sin título 1 - LibreOffice Impress" sap:VirtualizedContainerService.HintSize="434,998" sap2010:WorkflowViewState.IdRef="NApplicationCard_7" ScopeGuid="35bde397-2ee9-45b3-ad7e-c5b011780d68" Version="V1">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Hacer" sap:VirtualizedContainerService.HintSize="376,709" sap2010:WorkflowViewState.IdRef="Sequence_8">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DelayBefore="5" DisplayName="Escribir en" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,223" sap2010:WorkflowViewState.IdRef="NTypeInto_4" Text="Esta Aplicación Funciona" Version="V1" />
+            <uix:NClick ClickType="Single" DisplayName="Clic 'Cerrar'" sap:VirtualizedContainerService.HintSize="334,156" sap2010:WorkflowViewState.IdRef="NClick_6" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="35bde397-2ee9-45b3-ad7e-c5b011780d68" Version="V1">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="1326, 16, 56, 14" ElementType="Button" FriendlyName="'Cerrar'" FullSelectorArgument="&lt;ctrl name='Cerrar' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Cerrar' role='push button' automationid='' check:text='Cerrar' /&gt;" Guid="9c102a4c-2706-41d7-b8bc-05b77d163153" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADoAAAASCAYAAAAKRM1zAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACfSURBVFhH5dJBCoAwEATBXET//678SVlpQcSJB3eQxbpEyKA02NZkvfd1mpf9vBrdvdWesEt1F+SMDORo7NKdw9yRgRyNncUR6I4M5GjsLH4RekTGeX52IUdjl+ouzB1LjsYuzSjIGUuOxi5NvHIUEneGz37z636BHI1deeRo7MojR2NXHjkau/LI0diVR47GrjxyNHblkaOxK48cobUNiYG8PIcXBn8AAAAASUVORK5CYII=" InformativeScreenshot="a0a0f8d8448ac25b3af6e3205401d2c9.png" ScopeSelectorArgument="&lt;wnd app='soffice.bin' cls='SALFRAME' title='Sin título 1 - LibreOffice Impress' /&gt;" SearchSteps="Selector, FuzzySelector, Image" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ClickType="Single" DisplayName="Clic 'No guardar'" sap:VirtualizedContainerService.HintSize="334,156" sap2010:WorkflowViewState.IdRef="NClick_7" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="35bde397-2ee9-45b3-ad7e-c5b011780d68" Version="V1">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="236, 119, 85, 30" ElementType="Button" FriendlyName="'No guardar'" FullSelectorArgument="&lt;ctrl name='No guardar' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='No guardar' role='push button' automationid='' check:text='No guardar' /&gt;" Guid="7bcf432c-db09-43d4-acc6-53be2820a3ee" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFkAAAAiCAYAAAA07nWtAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHYSURBVGhD7ZTbrcIwDEC7AAPAfxmABRiAAVijC3QNtoA5GIAF2KAb5OpUcmVy+4raWAX546iNmzjOaZKiaZrg5MUlG+CSDfiQfL/fnZXQXv9Jfr/fzkJcsgEu2QCXbIBLNsAlG+CSDXDJBrhkA1aT/Hq9wul0CpfL5SP+fD7bGN91fEtQ2/l8Do/Ho/f7UlaVTKH7/T7cbrcu7pIzSK7run2KVJecQTKFIrWqqjYeS+b7brcLRVG06F2vIS59yCu5Qf9E3QauLBnHvPShBuLX67WdmzFD+VNySK1TZJFMQcfjsXsXybS5TqRA3U/nivshRBYGQ5J1jriew+HQ/XhiQ/nn5kghi2TaFI5cLZlYXCTtOCZjpa1zg5YatxkruxBoUwO7kKf00XP21T6VI4VskmlTFHd0quQ4pnOPSSY/c8o35u0TNJZ/bo4UskkG3suy7CTQnntdEJcFsUg5zvEYZIkU3uUE0I/j3SdoLP/cHClklQwUrHcGBcdHUfcXWKz0Ia/O3feN/CKFOE/mHRI0lD8lx1xWk5yTJQvcAqtJll0xRt+4Oegj/I1scifrIwvsYrluvpFNSv41XLIBLtkAl2yASzZgUrKzDtrrh2QnDy7ZAJecnSb8Abt/Ruu/plTeAAAAAElFTkSuQmCC" InformativeScreenshot="c1a702a77c90358ed2b1b27ea7f65815.png" ScopeSelectorArgument="&lt;wnd app='soffice.bin' cls='SALSUBFRAME' title='¿Quiere guardar el documento?' /&gt;" SearchSteps="Selector, FuzzySelector, Image" />
+              </uix:NClick.Target>
+            </uix:NClick>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, -8, 1382, 744" FilePath="C:\\Program Files\\LibreOffice\\program\\soffice.bin" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAPLSURBVFhHrZbJUxNBFIdzEJQlQQIhVHnUQj0oiv9BIGwSkFUgKOSC5e5F5S+ylCD7FgwJQghDwiYYqjyhhQcFl/IicOH5Xk/3MKQyzID5ql5lhqLn+/XrmZ4xxfOxw+5a8+RvY8Fqhx0+YK20y7V8Nw+W7uTBIlWbDRbabLvRNlu35LZa+HCT1JITxYK55hwIN1th9jZWkxVCTdkw02j183/TZs1j/7oq5CrxgZyJWUXdNoi4cyHSaguLECheYnISY4UUeTZMYzHJUax25LNZG2HvxyasPLsB8zhjnDULIbXk2VEeSyR/33BWPwDJaeZG2dvehOWnRaLlSggUx2bi5FP1BgKI9T4Ouxhi6UmRvN6qECiOTaNYyIP1WfoBxHofFwqx8LiItRzFLIS/JcOO8piQB+sMBqCb7SRQiOij67zlWXKI6gw7ytcDKA/UGggg7vSTQiHmH15jLZ+qywqPYojJxpxzKF+brLX4uEYb/nzzy50MCiE9KGQtxwqPVhzsE7qI5/t/2cEQc/cLAWcN/lqL8RBR2liwkgGFmL13Ffy3LPCuxmwsRKQ1F+axksXO1iaEOq/ARI0ZfNVmL9doQ3Lay5PJ3+9fSA7j1Zm7XKMNyZMdgBh3ZcIYFtdoQ1sqlZqfiz6QOi/LjxbfUOi5ZjcYra+8xqLNMOW5CFsLPj5ahuSjVQYChPmbTA3J/3yK8DN9fsXCEPRc4mcyo1UZrLhGG/EaVdjfh6mGbHYoz1o1c9WscX3lNuMsacwI/aoYuZnBimu0kV+jspCBFwti6wmtlov1pRbTLGnMMMrU0PlwZbp+APH+VsCLBXgAw+CYofgAKB8yEkC8vxXwYpPYeiLS5cQqZcc+Vctp1tReMUsaM1h5OMBQRToMYnGNNuLjQQEv5sd1J0ge6Spjx9TyeDnNkCQ0ZoB+VQxWpMFAeZp+APHxoIAXozU/Fjimv/xwAJL3GwkgPh4U8GITNXIA6XkxSC+d7Fjc1WJtaeZCQmP66FdFf1ka9JWd0Q9AcnrcFPBi43i3E9ILJ8zxAKLl8trK7SU5SWhMLwrV0N97Sw0EEF8uaoIdBfB7XeJn+myvhWDMfYGfyZD8rZEAYqNRsxUdh0B7QcKWs5nz9jKJ8zSMtJ6Hb5HDWzH9nYprtMGPB7bZJJselPeUGAnAd7lk40W5tyRVP4DYYpONtzgVurG4Rhuxvycbkr9xGAiA8g3xckm0zYobMP7R68MbUNyEYr2p5UzM5a8dKRtco43PlekYc5k/HyVPdPer5WK9D+QpTP7KccrBNRyT6R+6ESYqR0tHwwAAAABJRU5ErkJggg==" InformativeScreenshot="2065c44bf2dcd20fdfd185438ebeaadd.png" Selector="&lt;wnd app='soffice.bin' cls='SALFRAME' title='Sin título 1 - LibreOffice Impress'/&gt;" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+    <ui:StartProcess Arguments="{x:Null}" WorkingDirectory="{x:Null}" DisplayName="Iniciar proceso" FileName="C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" sap:VirtualizedContainerService.HintSize="434,87" sap2010:WorkflowViewState.IdRef="StartProcess_4" />
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Utilizar Aplicación: Windows PowerShell" sap:VirtualizedContainerService.HintSize="434,606" sap2010:WorkflowViewState.IdRef="NApplicationCard_8" ScopeGuid="4712a83d-282d-4fc5-9169-337eb78296fa" Version="V1">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Hacer" sap:VirtualizedContainerService.HintSize="376,317" sap2010:WorkflowViewState.IdRef="Sequence_9">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Escribir en" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,223" sap2010:WorkflowViewState.IdRef="NTypeInto_5" Version="V1">
+              <uix:NTypeInto.Text>
+                <InArgument x:TypeArguments="x:String">
+                  <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_1">"exit" + "[k(enter)]"</mca:CSharpValue>
+                </InArgument>
+              </uix:NTypeInto.Text>
+            </uix:NTypeInto>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="26, 0, 1233, 728" FilePath="C:\\Windows\\SysWOW64\\WindowsPowerShell\\v1.0\\powershell.exe" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAQjSURBVFhH7ZZZT1NREMf5CHwUHkw0PrCDskmVYPRNTcBEBYoioIgWrKzWLSbqE4iiCSEKJiaIEMBdRJCiggsUZassVgTZdZw5S++9PZdFn/knk1to7/nNmTPzv9dvXesyU2BK056wzA6IOuXyiT7YiiGva46T+msvXnshOn8A4grGLAJpVGhGmyfh4h+QsePCEuw4vwDbHXNgOTsDltJpiC/5CduKf0Bc0QQtBLFnvkGMfQRiTg+xxaNsX1jSBNuS+wm2nPgAkTndEHHsHURkd+HnHogrHLcJpCbcfQDdqMDPzUF6BSagg28r+k6LIHwUYu1uhA9zeN4y8OMcHp7Vyf7G+60Cq4nKTwuzBC789sL7Rv8AqbFrwQgv0MMHITrvK+6+3xx+jMP58fbhOp4AgdWECZQRlMMXET4PFscMg0s1OudXhtN5535G+EdTeNjR1+yoBNIo/NKlh293zOK5/4J7bQsCz9XgnMXSLwM/KeE9EHn8PcLfQni2E8Iz3yC8HUIzXlEFmwRSU2Bqsz9l7AuPL52C+OJJLP+8wHOVVlPDmcBzTeBZEt7GqoBrqg0YlNpiodIo8JJJzNiDZZ9gO9frXM3EP8FDj7SyvsBmVkcwKO2xDRtDheP/CC7HraHT2BOOu2Oi6RB+wgSeqcFDDr9gVcNx9hdYTSFHXjbJWV8OLmfd2T8n8Fxn77i1jke4HDcGP6rBg9OfUQO7BNIoynitRpNYNAC9I8aeSDpPO9dmXXZ8aIYGpyuOdZlAagpJfx5A57i60Qx6jaa+Y0qgua5Ut5nAXwFWFnB9CLY+YUeCY64aEGZmpV0qcJNZP3h1WNn9z+k5iEq7bQ4/TPCngD3GmhWnTDUgPKMyBl4F7qgZh+nZ3wLL1djaC4HJN7HET1eE45SxfhJIo7B0LgWuM5rE4kF41m3sftp1UVkLbEy6oxiNF45JSTi6LJ2/akA4Iv5knXLWOZw3HcEPXXOD27MosFzdrlFIzKqCIOtj01n3wvF7CafE8BmjGhCWzELlVcYtfwgqmycFUtON+x2wYe8tCEOoOZx3PDWdhFPQiGICqgHhudkIqofvLBlRZp1Kvi+/FjYfqGOzvv/iJ6h46Ibr9SMYw1D+YAhjEMrrBsB6uQtL/wjBzd4EYuzDlIBqQBHZzibfWffdOWu0/ZXsbKXRrKaEHA6Wgc8TcwMiB9PDyWiu1X0XywBvtOQa4XKa0UzNLIlfmCvGWuWFUyPi7lUDwjNkBmRmNCmX2iEuoxYCrY84XPdGQ+O2294ByYUPMep5FDxgkVRQB7tyamFTMt4rEqDfYwJ7BFYTltManTdgmHX5dFvpjWalWZdQfYjXPNWAcGEbldwXrr7R4NPtP+EU+GDzCKRRCLAQjDJcPjChNQb91vd+MjfT8q9rXX5+fn8BOkgnRRaUGXUAAAAASUVORK5CYII=" InformativeScreenshot="946f323becbca2cbce74182d3f674f81.png" Selector="&lt;wnd app='powershell.exe' cls='ConsoleWindowClass' title='Windows PowerShell'/&gt;" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+    <ui:StartProcess Arguments="{x:Null}" WorkingDirectory="{x:Null}" DisplayName="Iniciar proceso" FileName="C:\\Program Files\\LibreOffice\\program\\scalc.exe" sap:VirtualizedContainerService.HintSize="434,87" sap2010:WorkflowViewState.IdRef="StartProcess_2" />
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Utilizar Aplicación: Sin título 1 - LibreOffice Calc" sap:VirtualizedContainerService.HintSize="434,1020" sap2010:WorkflowViewState.IdRef="NApplicationCard_6" ScopeGuid="23dd5269-f822-4531-a04c-a05217d6e0b0" Version="V1">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Hacer" sap:VirtualizedContainerService.HintSize="376,731" sap2010:WorkflowViewState.IdRef="Sequence_7">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Escribir en" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,223" sap2010:WorkflowViewState.IdRef="NTypeInto_2" Text="Esta Aplicacion Funciona" Version="V1" />
+            <uix:NKeyboardShortcuts DelayBetweenShortcuts="{x:Null}" ActivateBefore="True" ClickBeforeMode="None" DisplayName="Atajos del teclado" sap:VirtualizedContainerService.HintSize="334,178" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_2" Shortcuts="[d(hk)][d(alt)][k(f4)][u(alt)][u(hk)]" Version="V1" />
+            <uix:NClick ClickType="Single" DisplayName="Clic 'No guardar'" sap:VirtualizedContainerService.HintSize="334,156" sap2010:WorkflowViewState.IdRef="NClick_9" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="23dd5269-f822-4531-a04c-a05217d6e0b0" Version="V1">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="236, 119, 85, 30" ElementType="Button" FriendlyName="'No guardar'" FullSelectorArgument="&lt;ctrl name='No guardar' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='No guardar' role='push button' automationid='' check:text='No guardar' /&gt;" Guid="9d8d4066-63ba-48e7-acb9-aa75ce7ba303" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFkAAAAiCAYAAAA07nWtAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHYSURBVGhD7ZTbrcIwDEC7AAPAfxmABRiAAVijC3QNtoA5GIAF2KAb5OpUcmVy+4raWAX546iNmzjOaZKiaZrg5MUlG+CSDfiQfL/fnZXQXv9Jfr/fzkJcsgEu2QCXbIBLNsAlG+CSDXDJBrhkA1aT/Hq9wul0CpfL5SP+fD7bGN91fEtQ2/l8Do/Ho/f7UlaVTKH7/T7cbrcu7pIzSK7run2KVJecQTKFIrWqqjYeS+b7brcLRVG06F2vIS59yCu5Qf9E3QauLBnHvPShBuLX67WdmzFD+VNySK1TZJFMQcfjsXsXybS5TqRA3U/nivshRBYGQ5J1jriew+HQ/XhiQ/nn5kghi2TaFI5cLZlYXCTtOCZjpa1zg5YatxkruxBoUwO7kKf00XP21T6VI4VskmlTFHd0quQ4pnOPSSY/c8o35u0TNJZ/bo4UskkG3suy7CTQnntdEJcFsUg5zvEYZIkU3uUE0I/j3SdoLP/cHClklQwUrHcGBcdHUfcXWKz0Ia/O3feN/CKFOE/mHRI0lD8lx1xWk5yTJQvcAqtJll0xRt+4Oegj/I1scifrIwvsYrluvpFNSv41XLIBLtkAl2yASzZgUrKzDtrrh2QnDy7ZAJecnSb8Abt/Ruu/plTeAAAAAElFTkSuQmCC" InformativeScreenshot="2ce35c02939b691e699348ba7ff53e46.png" ScopeSelectorArgument="&lt;wnd app='soffice.bin' cls='SALSUBFRAME' title='¿Quiere guardar el documento?' /&gt;" SearchSteps="Selector, FuzzySelector, Image" />
+              </uix:NClick.Target>
+            </uix:NClick>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="156, 46, 1025, 682" FilePath="C:\\Program Files\\LibreOffice\\program\\soffice.bin" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAOuSURBVFhHrZbJUxNREIc5giIqKIuEJRAIEEhAkE0WiV4sxXL7G5Vd9rCE3eKi5cXCK5bFVuVVhVvbvzfdYTLynLB8VV2Zoch8v+nX8yZZXuJb0cHHW80/uSi+GaOBzSgNbDTRI67+9UauCPWtRah3rYF6V+tPetbqRzrmQ3ny9ayuZO2nruUa6uTqWApxVVP7YhU9QC0Ek/Jvdli8F9+KpeQQq7wvXU49XA9X6rjC2xqC5V86lyH+R05tC5VkJP8DYlQmHB0f0NvtJ9SdrKWupBOiIxksYvlOe0oOsSNvTVT4B3BaHhWFP0fH+/TmY9xp+XIoFaJ9qWrHK7+fUQCWo+XnASFebw1Iy6tTIVoXKndaEyKfLzclGju63uflkEO82uzX9T4NkajYgbgFNVfmH0CH7SIgxMuNftPytkSFE2IqWNQyX/YN8ua5gH8ATHkfT/lFQYgXG71mvfnOTYjYTKCU5V9jc4FF0djRR+wyIMTgeg+3ne96PmBCyOX90ef7shz+2aPna90Umw1QdLaUQ+RnFqJnFRtLnVzmciDEs9Uuis7co6aZ4u1QJiEg714JyyUuzwGHeLrSSU3TxdQ0VTwqGjvdybDZ2a6S/d8/qJEDRKaKTkRjh18mhJeJkr6lYlM53VjMkMnjFZst5bVGq0v4bktUKFchc9wwVej/GDpvspB8jczG4gVyL1hnLxAqDZOFVD951z+AvskUvMW8YFPxgjv3AqGC4/oPd/wDmP2cS0m9SFzbqbvlzoSftjzCd613W8dCBcco0djhl0la2yH3ArkX93or4YkCOUKAAnMuGjv640G5yHortRP5cuSEwblo7OgvFyW95VyuljdOo+U83dJyrDHarLLa8dtyFQ4znk81fC4aO7rmCuReIFcgt1EzdkuO+JjlOBeNHTNwidO2+623e9LB51/bhB+0IDR203yCEMtxLho7Ou1KesudScd6u1vuxh2gejTPfALIcS4aO9jd3M+53/Otk65id4CqkRvmE0BelUkA3VoV93or7rvGcIGzAgRHcs0nQJggl2js6MQr2vIG03Jnc8Fdh2XKMVwAUneByuHr5hNAHhzO9Q+gO1ymYLiqR5311busZBHkFUPX5L8QxvmbaOzo0F01Gkg0diDH6/Sqgbx8KMc/gD5uV035+xwq4xKNnch08W7a4HFh8PRlolsshk83F8wAHrGzZqAcZeTZVPoue1c0diLTRXHeXr+bjcYqh1jlzvPtyCG2y7niohGysv4CddPYY/G/Kd4AAAAASUVORK5CYII=" InformativeScreenshot="39fc28d9cbb301191760b09a465afcc4.png" Selector="&lt;wnd app='soffice.bin' cls='SALFRAME' title='Sin título 1 - LibreOffice Calc'/&gt;" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
